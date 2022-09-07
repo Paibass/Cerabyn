@@ -1,14 +1,31 @@
 import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Card from './components/Card';
 
 function App() {
+  const [counter, setCounter] = useState(0);
+
+  const add = () => {
+    console.log('hiciste click');
+    setCounter( counter + 1 ) // counter++ -> counter = counter + 1
+  }
+
+  const rest = () => {
+    console.log('hiciste click');
+    setCounter( counter - 1)
+  }
+
   return (
     <div className="App">
     <Navbar/>
-      <h1>¡Pagina en Construcción!</h1>
-      <h2>CERABYN</h2>
-      <p>Vuelva Pronto!</p>
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content text-center">
+            <Card/>
+            <Card/>
+        </div>
+    </div>
     </div>
   );
 }
