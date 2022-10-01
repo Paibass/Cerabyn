@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Card from './components/Card';
+
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -22,8 +22,7 @@ function App() {
     <Navbar/>
       <div class="hero min-h-screen bg-base-200">
         <div class="hero-content text-center">
-            <Card/>
-            <Card/>
+
         </div>
     </div>
     </div>
