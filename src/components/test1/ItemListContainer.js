@@ -6,6 +6,12 @@ const ItemListContainer = () => {
 	const [items, setItems] = useState([])
 
 	useEffect(() => {
+		setTimeout(() => {
+			getItems()
+		}, 1000);
+			}, [])
+
+	const getItems = () => {
 		const URL = "items.json";
 		fetch( URL )
 			.then( res => res.json() )
@@ -14,7 +20,8 @@ const ItemListContainer = () => {
 				setItems( data )
 			})
 			.catch(err => { console.log("Hubo un error: ", err); })
-	}, [])
+
+	}
 
 
 	return(
