@@ -1,7 +1,7 @@
 import ItemListContainer from "./components/test1/ItemListContainer"
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ItemDetail from './components/test1/ItemDetail';
+import ItemDetailContainer from './components/test1/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
 
 const TestApp = () => {
@@ -10,7 +10,8 @@ const TestApp = () => {
 			<Navbar/>
 			<Routes>
 				<Route path='/' element={<ItemListContainer/>}/>
-				<Route path='/:id' element={<ItemDetail/>}/>
+				<Route path='/productos' element={<ItemListContainer/>}/>
+				<Route path='/productos/:detalleId' element={<ItemDetailContainer/>}/>
 			</Routes>
 			<Footer/>
 		</BrowserRouter>
