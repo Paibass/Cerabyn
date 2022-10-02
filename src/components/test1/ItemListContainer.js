@@ -25,11 +25,12 @@ const ItemListContainer = () => {
 
 
 	return(
-		<div>
-			<ItemList items={items}/>
-		</div>
+		<div class="hero min-h-screen bg-base-200">
+        		<div class="hero-content text-center">
+            		<ItemList items={items}/>
+        		</div>
+   			</div>
 		)
-
 }
 
 export default ItemListContainer

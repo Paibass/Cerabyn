@@ -19,3 +19,8 @@ code {
 .greeting {
   background-color: red;
 }
+
+.bg-warning{
+  background-color: #DCA54C;
+  color: #000;
+}
