@@ -2,21 +2,21 @@
   {
     "id": 1,
     "nombre": "Marmol",
-    "precio": "1231"
+    "precio": 1231
   },
   {
     "id": 2,
     "nombre": "Ceramica",
-    "precio": "2223"
+    "precio": 2223
   },
   {
     "id": 3,
     "nombre": "Madera",
-    "precio": "4451"
+    "precio": 4451
   },
   {
     "id": 4,
     "nombre": "Alfombra",
-    "precio": "1500"
+    "precio": 1500
   }
 ]

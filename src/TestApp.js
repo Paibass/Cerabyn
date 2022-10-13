@@ -10,16 +10,16 @@ import CartProvider from './context/CartContext';
 const TestApp = () => {
 	return (
 		<BrowserRouter>
-		<CartProvider>
-			<Navbar/>
-			<Routes>
-				<Route path='/' element={<ItemListContainer/>}/>
-				<Route path='/cart' element={<Cart />} />
-				<Route path='/productos' element={<ItemListContainer/>}/>
-				<Route path='/productos/:detalleId' element={<ItemDetailContainer/>}/>
-			</Routes>
-			<Footer/>
-		</CartProvider>	
+			<CartProvider>
+				<Navbar/>
+				<Routes>
+					<Route path='/' element={<ItemListContainer/>}/>
+					<Route path='/cart' element={<Cart />} />
+					<Route path='/productos' element={<ItemListContainer/>}/>
+					<Route path='/productos/:detalleId' element={<ItemDetailContainer/>}/>
+				</Routes>
+				<Footer/>
+			</CartProvider>	
 		</BrowserRouter>
 	)
 }
