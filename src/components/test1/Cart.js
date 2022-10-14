@@ -4,11 +4,11 @@ import ItemCart from './ItemCart';
 const Cart = () => {
 	const { cart, totalPrice } = useCartContext();
 
-	if(cart.lenght === 0){
+	if(cart.length === 0){
 		return (
 			<>
 				<p>No hay elementos en el carrito</p>
-				<Link to='/'>Hacer Compra</Link>
+				<Link className="btn" to='/'>Hacer Compra</Link>
 			</>	
 			);
 	}

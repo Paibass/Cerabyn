@@ -1,28 +1,17 @@
-import { useEffect , useState } from "react"
-import ItemList from "./ItemList"
+import { useEffect , useState } from "react";
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
 	
 	const [items, setItems] = useState([])
 
 	useEffect(() => {
-		setTimeout(() => {
-			getItems()
-		}, 1000);
+			const querydb = getFirestore();
+			const queryCollection = collection(querydb, 'Productos');
+			getDocs(queryCollection)
+			.then(res => setItems(res.docs.map(product => ({id: product.id, ...product.data()}))))
 			}, [])
-
-	const getItems = () => {
-		const URL = "items.json";
-		fetch( URL )
-			.then( res => res.json() )
-			.then( data => {
-				console.log( data );
-				setItems( data )
-			})
-			.catch(err => { console.log("Hubo un error: ", err); })
-
-	}
-
 
 	return(
 		<div class="hero min-h-screen bg-base-200">
