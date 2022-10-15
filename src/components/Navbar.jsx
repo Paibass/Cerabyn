@@ -10,9 +10,8 @@ const Navbar = () => {
   </div>
   <div className="navbar-center">
     <ul className="menu menu-horizontal p-0">
-      <li><NavLink to={'/'}>Inicio</NavLink></li>
+      <li className="mx-9"><NavLink to={'/'}>Inicio</NavLink></li>
       <li><NavLink to={'/productos'}>Productos</NavLink></li>
-      <li><NavLink to={'/nosotros'}>Nosotros</NavLink></li>
     </ul>
   </div>
   <div class="navbar-end">

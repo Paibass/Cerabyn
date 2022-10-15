@@ -14,8 +14,8 @@ const ItemListContainer = () => {
 			}, [])
 
 	return(
-		<div class="hero min-h-screen bg-base-200">
-        		<div class="hero-content text-center">
+		<div className="bg-base-200">
+        		<div className="flex ">
             		<ItemList items={items}/>
         		</div>
    			</div>
