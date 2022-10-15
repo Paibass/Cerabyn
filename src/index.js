@@ -11,12 +11,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAFyjhNncojnoL4eXmiLwnvXROUhhxyyR0",
-  authDomain: "cerabyn.firebaseapp.com",
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
   projectId: "cerabyn",
-  storageBucket: "cerabyn.appspot.com",
-  messagingSenderId: "122208935618",
-  appId: "1:122208935618:web:aea682a2cdf7bd2a1de55b"
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase
